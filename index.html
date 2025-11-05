@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Reserve</title>
-    <link rel="icon" type="image/x-icon" href="memerock.png">
+    <title>Meme Index</title>
     <style>
         * {
             margin: 0;
@@ -14,8 +13,8 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ff8c00;
-            color: #ffffff;
+            background-color: #FFD700;
+            color: #2d2d2d;
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -38,7 +37,7 @@
             border: 1px solid #e0e0e0;
             border-radius: 25px;
             text-decoration: none;
-            color: #ff8c00;
+            color: #FFD700;
             font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.3s ease;
@@ -48,7 +47,7 @@
 
         .nav-btn:hover {
             background: #fff;
-            color: #ff6600;
+            color: #FFC700;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
@@ -79,7 +78,7 @@
             font-size: 4rem;
             font-weight: 300;
             letter-spacing: -2px;
-            color: #fff;
+            color: #2d2d2d;
             margin-bottom: 40px;
             opacity: 0;
             animation: fadeIn 0.8s ease-out 0.2s forwards;
@@ -87,7 +86,7 @@
 
         .hero-subtitle {
             font-size: 1.3rem;
-            color: #fff;
+            color: #2d2d2d;
             font-weight: 300;
             margin-bottom: 60px;
             opacity: 0;
@@ -96,7 +95,7 @@
 
         .scroll-prompt {
             font-size: 1rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(45, 45, 45, 0.8);
             font-weight: 300;
             opacity: 0;
             animation: fadeIn 0.8s ease-out 1.5s forwards;
@@ -135,13 +134,13 @@
             font-size: 2.5rem;
             font-weight: 300;
             margin-bottom: 40px;
-            color: #fff;
+            color: #2d2d2d;
             text-align: center;
         }
 
         .section p {
             font-size: 1.2rem;
-            color: #fff;
+            color: #2d2d2d;
             margin: 0 auto 30px;
             text-align: center;
             font-weight: 300;
@@ -198,7 +197,7 @@
             font-size: 2rem;
             font-weight: 300;
             margin-bottom: 30px;
-            color: #ff8c00;
+            color: #FFD700;
         }
 
         .modal h3 {
@@ -206,7 +205,7 @@
             font-weight: 400;
             margin-top: 30px;
             margin-bottom: 15px;
-            color: #ff8c00;
+            color: #FFD700;
         }
 
         .modal p {
@@ -252,11 +251,11 @@
         }
 
         .highlight-box {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.3);
             padding: 50px;
             border-radius: 12px;
             margin: 50px 0;
-            border-left: 4px solid #fff;
+            border-left: 4px solid #2d2d2d;
         }
 
         .steps {
@@ -268,10 +267,10 @@
 
         .step {
             padding: 40px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(45, 45, 45, 0.3);
             border-radius: 12px;
             text-align: center;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .step-number {
@@ -279,7 +278,7 @@
             width: 50px;
             height: 50px;
             background: #fff;
-            color: #ff8c00;
+            color: #FFD700;
             border-radius: 50%;
             line-height: 50px;
             font-weight: 500;
@@ -291,12 +290,12 @@
             font-size: 1.4rem;
             margin-bottom: 20px;
             font-weight: 400;
-            color: #fff;
+            color: #2d2d2d;
         }
 
         .step p {
             font-size: 1rem;
-            color: rgba(255, 255, 255, 0.9);
+            color: #2d2d2d;
             line-height: 1.6;
         }
 
@@ -376,7 +375,7 @@
     <nav class="nav">
         <a href="#" class="nav-btn" onclick="openModal('purchases'); return false;">Purchases</a>
         <a href="#" class="nav-btn" onclick="openModal('whitepaper'); return false;">Whitepaper</a>
-        <a href="https://x.com/Meme_Reserves" class="nav-btn x-btn" target="_blank">𝕏</a>
+        <a href="https://x.com/memes_indexs" class="nav-btn x-btn" target="_blank">𝕏</a>
     </nav>
 
     <!-- Purchases Modal -->
@@ -396,16 +395,16 @@
     <div id="whitepaper-modal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('whitepaper')">&times;</span>
-            <h2>Meme Reserve Whitepaper</h2>
+            <h2>Meme Index Whitepaper</h2>
             
             <h3>Executive Summary</h3>
-            <p>Meme Reserve establishes a legal monopoly over viral meme intellectual property in the cryptocurrency space. By strategically acquiring IP rights to memes before they explode in popularity, we create a self-reinforcing revenue system where platform fees fund additional acquisitions.</p>
+            <p>Meme Index establishes a legal monopoly over viral meme intellectual property in the cryptocurrency space. By strategically acquiring IP rights to memes before they explode in popularity, we create a self-reinforcing revenue system where platform fees fund additional acquisitions.</p>
             
             <h3>The Problem</h3>
             <p>The memecoin space generates billions in trading volume, yet meme creators and IP holders capture virtually none of this value. Platforms like PumpFun profit from hosting tokens based on viral memes, while original intellectual property remains unmonetized and unprotected.</p>
             
             <h3>Our Solution</h3>
-            <p>Meme Reserve systematically acquires legal rights to meme brands, names, logos, and associated digital assets. Through legal enforcement, we compel platforms to either freeze unauthorized tokens or redirect their trading fees directly to us.</p>
+            <p>Meme Index systematically acquires legal rights to meme brands, names, logos, and associated digital assets. Through legal enforcement, we compel platforms to either freeze unauthorized tokens or redirect their trading fees directly to us.</p>
             
             <h3>Revenue Model</h3>
             <p>When platforms host memecoins using our IP, we have two enforcement options: complete token freezing or fee redirection. Fee redirection creates a continuous revenue stream that funds the acquisition of additional meme properties, building an expanding monopoly.</p>
@@ -423,7 +422,7 @@
 
     <!-- First Page - Hero Section -->
     <section class="hero">
-        <h1 class="logo">Meme Reserve</h1>
+        <h1 class="logo">Meme Index</h1>
         <p class="hero-subtitle">We Use Fees To Legally Buy IP Rights To Memes</p>
         <div class="scroll-prompt">
             Scroll down to learn more
@@ -437,7 +436,7 @@
             
             <section class="section" data-section="1">
                 <h2>Our Approach</h2>
-                <p>Inspired by BlackRock's systematic dominance, Meme Reserve creates a legal monopoly on meme brands and assets. We force platforms like PumpFun to redirect fees from any memecoin using our intellectual property.</p>
+                <p>Inspired by BlackRock's systematic dominance, Meme Index creates a legal monopoly on meme brands and assets. We force platforms like PumpFun to redirect fees from any memecoin using our intellectual property.</p>
             </section>
 
             <section class="section" data-section="2">
@@ -450,12 +449,12 @@
             <section class="section" data-section="3">
                 <h2>How We Dominate the Memecoin Space</h2>
                 <p>We legally acquire ownership of viral meme names, logos, and associated digital assets before they explode. Our team tracks PumpFun and similar platforms for any memecoin launches using our protected intellectual property.</p>
-                <p>Through legal enforcement, we force platforms to freeze unauthorized tokens or redirect trading fees to Meme Reserve. Every successful memecoin using our brands generates revenue for us, creating an unstoppable monopoly that funds the acquisition of even more meme properties.</p>
+                <p>Through legal enforcement, we force platforms to freeze unauthorized tokens or redirect trading fees to Meme Index. Every successful memecoin using our brands generates revenue for us, creating an unstoppable monopoly that funds the acquisition of even more meme properties.</p>
             </section>
 
             <section class="section" data-section="4">
                 <h2>Total Market Control</h2>
-                <p>When platforms like PumpFun host memecoins using our fee-purchased IP rights, legal enforcement gives us two options: freeze the token entirely or redirect all trading fees to Meme Reserve.</p>
+                <p>When platforms like PumpFun host memecoins using our fee-purchased IP rights, legal enforcement gives us two options: freeze the token entirely or redirect all trading fees to Meme Index.</p>
                 <p>This self-reinforcing cycle—using fees to buy more meme IP rights—creates systematic control of the entire memecoin ecosystem. Every viral trend becomes our revenue stream, funding the acquisition of even more meme properties.</p>
             </section>
 
@@ -508,4 +507,3 @@
     </script>
 </body>
 </html>
-
