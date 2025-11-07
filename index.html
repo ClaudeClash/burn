@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Share Bot Documentation</title>
-    <link rel="icon" type="image/x-icon" href="knowme.png">
+    <title>Send Documentation</title>
     <style>
         * {
             margin: 0;
@@ -14,20 +13,21 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #0a0f1e 0%, #1a1f2e 100%);
-            color: #e0e6ed;
+            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+            color: #1a1a1a;
             line-height: 1.6;
             min-height: 100vh;
         }
 
         .header {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 2px solid #22c55e;
             padding: 30px 40px;
-            background: rgba(15, 20, 35, 0.8);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 100;
+            box-shadow: 0 2px 10px rgba(34, 197, 94, 0.1);
         }
 
         .header-content {
@@ -42,9 +42,9 @@
             font-size: 28px;
             font-weight: 700;
             letter-spacing: 3px;
-            color: #4ade80;
+            color: #22c55e;
             text-decoration: none;
-            text-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+            text-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
         }
 
         .nav {
@@ -53,7 +53,7 @@
         }
 
         .nav-link {
-            color: #94a3b8;
+            color: #4b5563;
             text-decoration: none;
             font-size: 14px;
             letter-spacing: 1px;
@@ -62,8 +62,7 @@
         }
 
         .nav-link:hover {
-            color: #4ade80;
-            text-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+            color: #22c55e;
         }
 
         .social-link {
@@ -72,21 +71,20 @@
             justify-content: center;
             width: 40px;
             height: 40px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(74, 222, 128, 0.3);
+            background: #ffffff;
+            border: 2px solid #22c55e;
             border-radius: 8px;
-            color: #4ade80;
+            color: #22c55e;
             text-decoration: none;
             font-size: 18px;
             font-weight: 700;
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
         }
 
         .social-link:hover {
-            background: rgba(74, 222, 128, 0.1);
-            border-color: #4ade80;
-            box-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+            background: #22c55e;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
             transform: translateY(-2px);
         }
 
@@ -102,12 +100,12 @@
             top: 140px;
             width: 200px;
             padding-right: 30px;
-            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 2px solid #e5e7eb;
         }
 
         .sidebar-link {
             display: block;
-            color: #64748b;
+            color: #6b7280;
             text-decoration: none;
             font-size: 13px;
             letter-spacing: 0.5px;
@@ -118,7 +116,7 @@
 
         .sidebar-link:hover,
         .sidebar-link.active {
-            color: #4ade80;
+            color: #22c55e;
             transform: translateX(5px);
         }
 
@@ -132,7 +130,7 @@
             font-weight: 700;
             letter-spacing: 1px;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #4ade80 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -145,8 +143,8 @@
             margin-top: 80px;
             margin-bottom: 30px;
             padding-bottom: 15px;
-            border-bottom: 2px solid rgba(74, 222, 128, 0.3);
-            color: #f1f5f9;
+            border-bottom: 3px solid #22c55e;
+            color: #1a1a1a;
         }
 
         h3 {
@@ -155,11 +153,11 @@
             letter-spacing: 0.5px;
             margin-top: 40px;
             margin-bottom: 20px;
-            color: #e2e8f0;
+            color: #2d2d2d;
         }
 
         p {
-            color: #cbd5e1;
+            color: #4b5563;
             font-size: 16px;
             font-weight: 400;
             margin-bottom: 20px;
@@ -167,30 +165,30 @@
         }
 
         strong {
-            color: #f1f5f9;
+            color: #1a1a1a;
             font-weight: 600;
         }
 
         .intro {
             font-size: 18px;
-            color: #94a3b8;
+            color: #6b7280;
             margin-bottom: 60px;
             line-height: 1.8;
         }
 
         code {
-            background: rgba(74, 222, 128, 0.1);
+            background: #dcfce7;
             padding: 4px 10px;
             border-radius: 6px;
             font-family: 'Monaco', 'Courier New', monospace;
             font-size: 14px;
-            color: #4ade80;
-            border: 1px solid rgba(74, 222, 128, 0.2);
+            color: #16a34a;
+            border: 1px solid #bbf7d0;
         }
 
         pre {
-            background: rgba(15, 20, 35, 0.8);
-            border: 1px solid rgba(74, 222, 128, 0.2);
+            background: #f9fafb;
+            border: 2px solid #e5e7eb;
             padding: 30px;
             margin: 30px 0;
             overflow-x: auto;
@@ -198,7 +196,7 @@
             font-size: 14px;
             line-height: 1.6;
             border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         pre code {
@@ -206,6 +204,7 @@
             padding: 0;
             border-radius: 0;
             border: none;
+            color: #1a1a1a;
         }
 
         .feature-grid {
@@ -217,17 +216,17 @@
 
         .feature-card {
             padding: 30px;
-            background: rgba(15, 20, 35, 0.6);
-            border: 1px solid rgba(74, 222, 128, 0.2);
+            background: #ffffff;
+            border: 2px solid #e5e7eb;
             border-radius: 16px;
             transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .feature-card:hover {
-            border-color: #4ade80;
+            border-color: #22c55e;
             transform: translateY(-5px);
-            box-shadow: 0 12px 40px rgba(74, 222, 128, 0.2);
+            box-shadow: 0 8px 24px rgba(34, 197, 94, 0.15);
         }
 
         .feature-title {
@@ -235,22 +234,22 @@
             font-weight: 600;
             letter-spacing: 0.5px;
             margin-bottom: 15px;
-            color: #4ade80;
+            color: #22c55e;
         }
 
         .feature-desc {
             font-size: 14px;
-            color: #94a3b8;
+            color: #6b7280;
             line-height: 1.6;
         }
 
         .note {
-            background: rgba(15, 20, 35, 0.6);
-            border-left: 3px solid #4ade80;
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
             padding: 25px 30px;
             margin: 30px 0;
             border-radius: 8px;
-            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
         }
 
         .note-title {
@@ -259,43 +258,42 @@
             font-size: 14px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #4ade80;
+            color: #16a34a;
         }
 
         .note-content {
             font-size: 14px;
-            color: #cbd5e1;
+            color: #4b5563;
             line-height: 1.7;
         }
 
         .highlight {
-            background: linear-gradient(135deg, rgba(74, 222, 128, 0.2) 0%, rgba(59, 130, 246, 0.2) 100%);
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
             color: white;
             padding: 35px;
             margin: 40px 0;
-            border: 2px solid rgba(74, 222, 128, 0.4);
+            border: none;
             border-radius: 16px;
-            box-shadow: 0 12px 40px rgba(74, 222, 128, 0.15);
-            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 24px rgba(34, 197, 94, 0.25);
         }
 
         .highlight .note-title {
-            color: #4ade80;
+            color: #ffffff;
             font-size: 16px;
         }
 
         .highlight .note-content {
-            color: #e2e8f0;
+            color: #ffffff;
         }
 
         .highlight p {
-            color: #f1f5f9;
+            color: #ffffff;
         }
 
         .highlight code {
-            background: rgba(15, 20, 35, 0.5);
-            color: #4ade80;
-            border-color: rgba(74, 222, 128, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
         ul, ol {
@@ -305,7 +303,7 @@
 
         li {
             margin-bottom: 12px;
-            color: #cbd5e1;
+            color: #4b5563;
             font-size: 16px;
             font-weight: 400;
         }
@@ -313,26 +311,27 @@
         .step {
             padding: 30px;
             margin: 25px 0;
-            background: rgba(15, 20, 35, 0.6);
-            border-left: 3px solid #4ade80;
+            background: #ffffff;
+            border-left: 4px solid #22c55e;
             border-radius: 12px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border: 2px solid #e5e7eb;
+            border-left: 4px solid #22c55e;
         }
 
         .step-number {
             display: inline-block;
             width: 36px;
             height: 36px;
-            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
-            color: #0a0f1e;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: #ffffff;
             border-radius: 50%;
             text-align: center;
             line-height: 36px;
             font-weight: 700;
             margin-right: 15px;
             font-size: 16px;
-            box-shadow: 0 4px 12px rgba(74, 222, 128, 0.4);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
         }
 
         /* Glass morphism effect for cards */
@@ -417,8 +416,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(74, 222, 128, 0.08) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.05) 0%, transparent 50%);
             pointer-events: none;
             z-index: -1;
         }
@@ -427,11 +426,11 @@
 <body>
     <div class="header">
         <div class="header-content">
-            <a href="#" class="logo-small">SHARE BOT</a>
+            <a href="#" class="logo-small">SEND</a>
             <nav class="nav">
                 <a href="#introduction" class="nav-link">ABOUT</a>
                 <a href="#documentation" class="nav-link">DOCUMENTATION</a>
-                <a href="https://x.com/ShareBotSolana" target="_blank" rel="noopener noreferrer" class="social-link" title="Follow us on X">
+                <a href="https://x.com/SendYourFees" target="_blank" rel="noopener noreferrer" class="social-link" title="Follow us on X">
                     𝕏
                 </a>
             </nav>
@@ -453,15 +452,15 @@
                 <h2>Introduction</h2>
                 
                 <p>
-                    <strong>Share Bot</strong> is a fee distribution service that allows memecoin developers to easily spread collected fees to all token holders proportionally. Simply send your fees along with your contract address, and we'll handle the rest.
+                    <strong>Send</strong> is a fee distribution service that allows memecoin developers to easily spread collected fees to all token holders proportionally. Simply send your fees along with your contract address, and we'll handle the rest.
                 </p>
                 
                 <p>
-                    This service creates an additional incentive for holders and builds community loyalty by ensuring everyone benefits from the project's success. Share Bot automates the complex process of proportional distribution, making it simple for developers to reward their communities.
+                    This service creates an additional incentive for holders and builds community loyalty by ensuring everyone benefits from the project's success. Send automates the complex process of proportional distribution, making it simple for developers to reward their communities.
                 </p>
 
                 <p>
-                    All distributions are transparent, secure, and executed automatically based on current holder snapshots. Join hundreds of memecoin projects already using Share Bot to reward their communities.
+                    All distributions are transparent, secure, and executed automatically based on current holder snapshots. Join hundreds of memecoin projects already using Send to reward their communities.
                 </p>
 
                 <div class="highlight">
@@ -472,9 +471,9 @@
                 </div>
 
                 <div class="note">
-                    <div class="note-title">Why Share Bot?</div>
+                    <div class="note-title">Why Send?</div>
                     <div class="note-content">
-                        Share Bot eliminates the complexity of manual fee distribution. We handle snapshots, calculations, and transactions automatically, allowing you to focus on building your project while keeping your community engaged and rewarded.
+                        Send eliminates the complexity of manual fee distribution. We handle snapshots, calculations, and transactions automatically, allowing you to focus on building your project while keeping your community engaged and rewarded.
                     </div>
                 </div>
             </section>
@@ -552,7 +551,7 @@
                 <h2>Security</h2>
                 
                 <p>
-                    Security is our top priority. Share Bot implements multiple layers of protection to ensure only authorized distributions can occur.
+                    Security is our top priority. Send implements multiple layers of protection to ensure only authorized distributions can occur.
                 </p>
 
                 <h3>Dev Wallet Verification</h3>
@@ -661,9 +660,9 @@
                 <h3>Contact & Support</h3>
                 <p>For registration, support, or questions:</p>
                 <ul>
-                    <li>Email: <code>support@sharebot.io</code></li>
-                    <li>Telegram: <code>@ShareBotSupport</code></li>
-                    <li>Discord: <code>discord.gg/sharebot</code></li>
+                    <li>Email: <code>support@sendyourfees.com</code></li>
+                    <li>Telegram: <code>@SendYourFees</code></li>
+                    <li>Discord: <code>discord.gg/sendyourfees</code></li>
                 </ul>
             </section>
 
@@ -697,9 +696,9 @@
             </section>
 
             <div class="note" style="margin-top: 80px;">
-                <div class="note-title">About Share Bot</div>
+                <div class="note-title">About Send</div>
                 <div class="note-content">
-                    Share Bot makes fee distribution simple, secure, and automated for memecoin projects. By rewarding holders proportionally, you build stronger communities and create lasting value. Join us in making crypto more rewarding for everyone.
+                    Send makes fee distribution simple, secure, and automated for memecoin projects. By rewarding holders proportionally, you build stronger communities and create lasting value. Join us in making crypto more rewarding for everyone.
                 </div>
             </div>
         </div>
